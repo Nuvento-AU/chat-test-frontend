@@ -19,7 +19,7 @@ docker build -t my-react-app .
 To run the Docker container, use the following command:
 
 ```
-docker run -p 8080:80 my-react-app
+docker run -p 8080:80 -e FASTAPI_URL=http://your-api-url my-react-app
 ```
 
 The application will be accessible at `http://localhost:8080`.

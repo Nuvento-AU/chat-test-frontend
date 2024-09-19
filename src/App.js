@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 
-const API_URL = 'http://localhost:8000';  // Adjust this to your FastAPI server URL
+const API_URL = window._env_.API_URL || 'http://localhost:8000';
 
 export default function ChatApp() {
   const [sessions, setSessions] = useState([]);
