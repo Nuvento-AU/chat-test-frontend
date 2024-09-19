@@ -1,0 +1,13 @@
+services:
+  react-app:
+    build: .
+    environment:
+      - FASTAPI_URL=http://node3.netbird.selfhosted:8000
+    networks:
+      - chat-test-network
+    ports:
+      - "8080:80"
+networks:
+  chat-test-network:
+    driver: bridge
+    name: chat-test-network
