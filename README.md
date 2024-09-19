@@ -11,7 +11,7 @@ This is a React application containerized using Docker.
 To build the Docker image, run the following command in the directory containing the Dockerfile:
 
 ```
-docker build -t my-react-app .
+docker build -t chat-test-app .
 ```
 
 ## Running the Docker Container
@@ -19,7 +19,7 @@ docker build -t my-react-app .
 To run the Docker container, use the following command:
 
 ```
-docker run -p 8080:80 -e FASTAPI_URL=http://your-api-url my-react-app
+docker run -p 8080:80 -e FASTAPI_URL=http://your-api-url chat-test-app
 ```
 
 The application will be accessible at `http://localhost:8080`.
